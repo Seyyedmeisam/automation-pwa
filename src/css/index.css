@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Vazir'; /* نام فونت */
+  src: url('../../src/vazir-font-v16.1.0/Vazir-Bold.woff2') format('woff2'), /* منبع فونت */
+       url('./vazir-font-v16.1.0/Vazir-Light.woff') format('woff'); /* منبع فونت */
+}
+
+
+
+body {
+font-family: "Vazir", sans-serif !important;
+font-size: 20px;
+direction: rtl;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.ql-editor {
+  direction: rtl !important;
+  text-align: right !important;
+  font-size: 1.5rem !important; 
+  /* font-family: 'B Nazanin', Tahoma, Arial, sans-serif !important; */
+  line-height: 1.6 !important;
+}
+
+.card-body { /* Full width on larger screens */
+  overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+}
+form .border .p-4{
+  overflow-x: auto;
+}
+@media (max-width: 768px) {
+  .card-buttons {
+    text-align: center; /* Align buttons to the center for screens less than 768 pixels */
+  }
+}

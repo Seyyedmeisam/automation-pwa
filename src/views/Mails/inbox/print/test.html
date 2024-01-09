@@ -1,0 +1,45 @@
+<html>
+      <head>
+        <link rel="stylesheet" href="PrintableView.css">
+      </head>
+      <body>
+        <div class="print-container">
+          <header>
+            <div class="ITNOG"> بسمه تعالی</div>
+            <div class="header">
+              <div class="logo">
+                <img src="Instagram-Logo.png" alt="Logo" />
+              </div>
+              <div class="date">
+                <!-- تاریخ: {moment(created_date, 'YYYY-MM-DD HH:mm:ss').locale('fa').format('jYYYY/jMM/jDD')} -->
+                تاریخ:
+                <br />
+                شماره: {mail_id}
+              </div>
+            </div>
+          </header>
+          
+          <div class="page">
+            <div class="title"> {mail_title}</div>
+            <p>با سلام و احترام</p>
+            <p>جناب آقای {recive_name}</p>
+            <p>{recive_role} اداره فلان</p>
+            <!-- <p>{mail_description}</p> -->
+            <p></p>
+          </div>
+          <footer>
+            <div class="signature">
+              <div class="signature-text">امضا
+              <br/>
+              {sender_name}
+              <br/>
+              {sender_role}</div>
+              <div class="signature-image">
+                <img src="Instagram-Logo.png" alt="Signature" />
+
+              </div>
+            </div>
+          </footer>
+        </div>
+      </body>
+    </html>
